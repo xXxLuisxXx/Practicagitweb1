@@ -1,4 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-    <h1>HOla mundo</h1>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro de Clientes</title>
+    <link rel="stylesheet" href="styles 2.css"> 
+</head>
+<body>
+    <main>
+        <h1>Formulario de Registro de Clientes</h1>
+        <form id="registrationForm">
+            <fieldset>
+                <legend>Datos Personales</legend>
+
+                <label for="firstName">Nombres</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <span class="error-message" id="firstNameError"></span>
+
+                <label for="lastName">Apellidos</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <span class="error-message" id="lastNameError"></span>
+
+                <label for="date">Fecha de nacimiento</label>
+                <input type="date" id="date" name="date" required>
+                <span class="error-message" id="dateError"></span>
+
+                <label for="email">Correo Electronico</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error-message" id="emailError"></span>
+
+                <label for="phone">Telefono</label>
+                <input type="tel" id="phone" name="phone" required>
+                <span class="error-message" id="phoneError"></span>
+
+                <label for="id">Cedula</label>
+                <input type="text" id="id" name="id" required>
+                <span class="error-message" id="idError"></span>
+
+                <label for="Ubicacion">Direccion</label>
+                <input type="text" id="direccion" name="direccion" required>
+                <span class="error-message" id="direccionError"></span>
+
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+                <span class="error-message" id="passwordError"></span>
+
+                <label for="confirmPassword">Confirmar Contraseña</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <span class="error-message" id="confirmPasswordError"></span>
+
+                <button type="submit">Registrar</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <script src="validaciones.js"></script>
+</body>
 </html>
